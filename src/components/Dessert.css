@@ -1,0 +1,85 @@
+.dessert-container{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.dessert-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "manometer-serif-high";
+  font-weight: 400;
+  font-style: italic;;
+  color: black;
+  font-size: 75px;
+  margin-bottom: 20px;
+  text-align: left;
+  position: relative;
+
+  background: linear-gradient(-45deg, #008C45, #F4F9FF, #CD212A);
+  background-size: 200% 200%;
+  animation: Gradient 10s ease infinite;
+}
+
+
+@keyframes Gradient {
+  0% {
+  background-position: 0% 50%;
+  }
+50% {
+background-position: 100% 50%;
+}
+100% {
+background-position: 0% 50%;
+}
+}
+
+
+
+.dessert-title-left-section {
+flex: 2.5;
+background-color: transparent;
+height: 194px;
+padding: 50px;
+background-clip: padding-box;
+}
+.dessert-title-right-section {
+  flex: 1;
+  background-color: transparent;
+  height: 194px;
+}
+.dessert-title-text {
+  color: black;
+  background-color: white;
+  mix-blend-mode: screen;
+}
+
+.dessert-slide {
+  margin-bottom: 60px;
+  width: 100%;
+}
+.dessert-top-clip,
+.dessert-bottom-clip,
+.dessert-left-clip,
+.dessert-right-clip {
+  z-index: 5;
+  position: absolute;
+  background-color: white;
+  height: 70px;
+}
+.dessert-top-clip{
+  top: 0;
+}
+.dessert-left-clip {
+  width: 702.28px;
+  left: 0;
+}
+.dessert-bottom-clip {
+  bottom: 0;
+}
+.dessert-right-clip {
+  right: 0;
+  width:240.91px;
+}
+

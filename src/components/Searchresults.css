@@ -1,0 +1,50 @@
+.results-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 30px; 
+  row-gap: 40px;
+  background-color: white;
+  padding: 80px 60px;
+}
+ .results-title {
+    background-color: white;
+    padding-top: 80px;
+    text-align: center;
+    font-family: "baskervville";
+    font-size: 40px; 
+  }
+  .results-italian {
+    font-family: "Manometer-Serif-High";
+    font-weight: bold; 
+    color: transparent;
+    background: linear-gradient(90deg, #008C45, #eaeff6, #CD212A);
+    background-clip: text;
+    font-size: 70px; 
+  }
+
+  .results-keyword {
+    background-color: white;
+    color: grey;
+    text-align: center;
+    font-family: "baskervville";
+    font-size: 40px; 
+  }
+  .results-keyword::after {
+    animation: anim 2s forwards;
+    content: '';
+    width: 0px;
+    left: 50%;
+    bottom: 0;
+    position: absolute; 
+    height: 2px;
+    background-color: black; 
+  }
+
+  @keyframes anim {
+    0% {
+      width: 0px;
+    }
+    100% {
+      width: 50px;
+    }
+  }

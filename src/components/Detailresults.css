@@ -1,0 +1,13 @@
+.detail-wrapper {
+  padding: 80px 60px;
+  background-color: white;
+  display: flex;
+
+}
+
+.detail-info {
+  flex: 1;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  text-align: left; 
+}

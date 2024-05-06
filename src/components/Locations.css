@@ -1,0 +1,30 @@
+.locations-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.locations-component {
+  padding: 50px;
+  display: flex;
+}
+
+.locations-image-wrapper {
+  flex: 1;
+}
+
+.locations-review-holder {
+  flex: 1;
+  position: relative;
+}
+
+.review-button {
+  position: absolute;
+  color: white;
+  bottom: 0;
+  left: 0;
+  height: 80px;
+  width: 120px;
+  border-radius: 40px;
+  background-color: rgb(185, 9, 9);
+}

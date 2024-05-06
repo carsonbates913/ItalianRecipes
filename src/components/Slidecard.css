@@ -1,0 +1,70 @@
+.slidecards__item {
+  display: flex;
+  width: 100%;
+  margin: 1rem 2rem 2rem;
+  border-radius: 10px;
+}
+
+.slidecards__item__link {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.slidecards__item__pic-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 67%;
+  overflow: hidden;
+}
+
+.slidecards__item__pic-wrap::after {
+  content: attr(data-category);
+  position: absolute;
+  bottom: 0;
+  margin-left: 10px;
+  padding: 6px 8px;
+  max-width: calc((100%) - 60px);
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+  background-color: #29bf12;
+  }
+
+.slidecards__item__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  transition: all 0.2s linear;
+}
+
+.slidecards__item__img:hover {
+transform: scale(1.1);
+}
+
+.slidecards__item__info {
+  background-color: white;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 98px;
+}
+
+.slidecards__item__text {
+  color: #252e48;
+  font-family: "blanket";
+  font-size: 25px;
+  line-height: 24px;
+}
